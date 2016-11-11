@@ -39,6 +39,7 @@ for e in train_network:
     T_matrix[e[0]][e[1]] = 1
     T_matrix[e[1]][e[0]] = 1
 
+"""
 print 'Transfer Matrix'
 for v1 in xrange(1, len(vertices)+1):
     out = []
@@ -49,6 +50,7 @@ for v1 in xrange(1, len(vertices)+1):
             out.append('0')
     print ' '.join(out)
 print ''
+"""
 
 # solution 
 steps = 3
@@ -78,8 +80,6 @@ print 'Solution Matrix'
 for col, vec in enumerate(solution_matrix, 1):
     print '[', col, ']', ' '.join(map(str, vec[1:]))
 print ''
-
-
 
 
 
